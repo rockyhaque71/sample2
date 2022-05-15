@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a, a:hover {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    vertical-align: middle;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}
+:root {
+    --primary: #0771b9;
+    --secondary: #5bc5f3;
+}
+p {
+    margin: 0;
+}
+/* Header Part ----------------------------------------------------------------- */
+.welcome_part {
+    background: var(--primary);
+}
+.welcome_icon ul li a {
+    color: #fff;
+    padding: 0 8px;
+    transition: 0.3s;
+}
+.welcome_icon ul li a:hover {
+    color: #353535;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.5);
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: var(--primary);
+}
+.slider_part {
+    background: url('../img/hero_bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.overlay {
+    background: rgba(0,0,0,0.5);
+    padding: 100px 0;
+}
+.slider_con h1 {
+    font-size: 48px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.slider_con h1:nth-child(2) {
+    font-weight: 700;
+} 
+.slider_con p {
+    padding: 20px 0;
+    line-height: 1.8;
+}
+.slider_btn a {
+    height: 45px;
+    width: 120px;
+    border-radius: 0;
+    background: transparent;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 10px;
+}
+.slider_btn a:hover {
+    background: var(--primary);
+    border: 2px solid var(--primary);
+}
+/* Header Part ----------------------------------------------------------------- */
+
+
+/* About Part Start ----------------------------------------------------------------- */
+.about_part,
+.service_part {
+    padding: 60px 0;
+}
+.about_head h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+/* About Part End   ----------------------------------------------------------------- */
+
+
+/* Service Part Start ----------------------------------------------------------------- */
+.service_con_main {
+    padding-top: 60px;
+}
+.service_con {
+    padding: 25px;
+    transition: .3s;
+}
+.service_con:hover {
+    box-shadow: 0 0 15px -10px black;
+}
+.service_con:hover .service_img {
+    background: var(--secondary);
+    box-shadow: 0 0 0 3px white,
+                0 0 0 6px var(--secondary),
+                0 0 0 9px white;
+}
+.service_img {
+    height: 80px;
+    width: 80px;
+    background: #f1f1f1;
+    box-shadow: 0 0 0 3px white,
+                0 0 0 6px #f1f1f1,
+                0 0 0 9px white;
+    border-radius: 50%;
+    line-height: 80px;
+    margin:-65px auto 20px;
+    transition: 0.3s;
+}
+.service_con h4 {
+    text-transform: uppercase;
+}
+/* Service Part End   ----------------------------------------------------------------- */
+
+
+/* Portfolio Part Start   ----------------------------------------------------------------- */
+.portfolio_part {
+    padding: 60px 0;
+}
+.port_img {
+    position: relative;
+}
+.port_img_overlay {
+    height: 100%;
+    width: 0%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .3s;
+}
+.port_img:hover .port_img_overlay {
+    opacity: 1;
+    width: 100%;
+}
+.port_img_overlay a {
+    height: 50px;
+    width: 50px;
+    background: var(--secondary);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+}
+/* Portfolio Part End   ----------------------------------------------------------------- */
+
+
+/* Team Part Start   ----------------------------------------------------------------- */
+.team_part {
+    padding: 60px 0;
+}
+.team_con_wrapper h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.team_img {
+    transition: .3s;
+    position: relative;
+}
+.team_img:hover {
+    box-shadow: 0 0 18px -12px #000;
+}
+.team_img:hover ~ .team_con_wrapper h4{
+    color: var(--secondary);
+}
+.team_img_overlay {
+    height: 100%;
+    width: 0;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .3s;
+}
+.team_img:hover .team_img_overlay {
+    opacity: 1;
+    width: 33.33%;
+}
+.team_img_overlay ul li {
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 5px 0;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.3s;
+}
+.team_img_overlay ul li:hover {
+    background: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+.team_img_overlay ul li a{
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Team Part End   ----------------------------------------------------------------- */
+
+
+/* Testimonial Part Start   ----------------------------------------------------------------- */
+.testi_part {
+    padding: 60px 0;
+}
+.testi_con_wrapper {
+    background: #f1f1f1;
+    padding: 15px 10px;
+    position: relative;
+}
+.testi_box {
+    height: 50px;
+    width: 50px;
+    background: #f1f1f1;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%)  rotate(45deg);
+    z-index: -1;
+}
+/* Testimonial Part End   ----------------------------------------------------------------- */
+
+/* Contact Part Start   ----------------------------------------------------------------- */
+.contact_part {
+    background: #353535;
+    padding: 30px 0;
+}
+.icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_icon_main {
+    gap: 10px
+}
+.contact_icon_main ul li a {
+    color: #fff;
+}
+.contact_con_wrapper > ul > li a {
+    color: #fff;
+    display: block;
+    padding: 5px 0;
+    transition: 0.3s;
+}
+.contact_con_wrapper > ul > li a:hover {
+    color: var(--secondary);
+}
+.contact_con_wrapper > .row.d-flex {
+    row-gap: 24px;
+}
+/* Contact Part End     ----------------------------------------------------------------- */
+
+/* Footer Part Start   ----------------------------------------------------------------- */
+.footer_part {
+    padding: 15px 0;
+    background: #555;
+}
+.footer_con a {
+    color: var(--secondary);
+}
+/* Footer Part End     ----------------------------------------------------------------- */
+.scrollspy {
+    height: 400px;
+    overflow: scroll;
+}
+
+/* Back To Top Start */
+.back_to_top {
+    position: fixed;
+    right: 25px;
+    bottom: 15px;
+    display: none;
+    z-index: 9;
+}
+/* Back To Top End */
+
+/* Navbar Color Change On Scroll Start */
+
+.bg_on_scroll {
+    background: #fff;
+    transition: .5s;
+} 
+/* Navbar Color Change On Scroll End */
+
+/* Swiper Slider Start */
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    color: yellow;
+}
+/* Swiper Slider End */
